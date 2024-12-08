@@ -1,0 +1,11 @@
+### GET request to example server
+POST http://localhost:8081/users-rest
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Jason"
+}
+
+
+###
