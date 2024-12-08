@@ -19,6 +19,7 @@ dependencies {
     // GRPC
     implementation project(':grpc-common')
     implementation 'net.devh:grpc-server-spring-boot-starter:2.13.1.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
 
     // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.20'
