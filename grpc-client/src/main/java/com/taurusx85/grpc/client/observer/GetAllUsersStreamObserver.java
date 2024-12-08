@@ -31,7 +31,7 @@ public class GetAllUsersStreamObserver implements StreamObserver<UserMessage> {
     @Override
     public void onNext(UserMessage value) {
         users.add(new UserDTO(value.getId(), value.getName()));
-        log.info("User received");
+        log.info("User received {}-{}", value.getId(), value.getName());
     }
 
     @Override

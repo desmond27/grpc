@@ -72,7 +72,7 @@ public class UserService extends UserServiceImplBase {
         log.info("All users requested");
         try {
             for (User user : userDAO.getAll()) {
-                log.info("User sent");
+                log.info("User sent {}", user);
                 responseObserver.onNext(toUser(user));
             }
         } catch (Exception e) {
